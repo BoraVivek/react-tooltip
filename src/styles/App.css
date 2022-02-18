@@ -1,0 +1,80 @@
+/* App */
+.App {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Heading */
+.heading {
+  font-size: 30px;
+  background: rgb(44, 157, 223);
+  color: white;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 10px;
+}
+
+/* Heading Name */
+.heading > .name {
+  font-size: 20px;
+}
+
+/* Tooltip Container */
+.tooltips-container {
+  margin-top: 50px;
+  display: flex;
+  width: 80vw;
+  justify-content: space-around;
+  gap: 100px;
+}
+
+/* Tooltip Design for Heading */
+
+/* Heading */
+.heading {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+/* Heading Tooltip */
+.heading .name {
+  width: 150px;
+  background-color: rgb(5, 57, 87);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 120%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+/* Heading Tooltip Arrow */
+.heading .name::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(5, 57, 87) transparent transparent transparent;
+}
+
+/* Media Queries to make the application responsive */
+@media screen and (max-width: 600px) {
+  .tooltips-container {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .heading .name {
+    bottom: 108%;
+  }
+}
