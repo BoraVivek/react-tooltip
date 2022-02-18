@@ -15,6 +15,8 @@
 - left
 - right
 
+**Note** : Positions are case sensitive, so make sure you right position in small letters.
+
 ### Functionality:
 
 - Ability to Create Tooltip anywhere
