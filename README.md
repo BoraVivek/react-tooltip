@@ -1,6 +1,6 @@
 # Tooltip Component for React by Vivek Bora
 
-### Usage
+### Usage:
 
 ```js
 <Tooltip position="top" text="This is top tooltip">
@@ -8,20 +8,27 @@
 </Tooltip>
 ```
 
-### Functionality
+#### Available Positions:
+
+- top
+- bottom
+- left
+- right
+
+### Functionality:
 
 - Ability to Create Tooltip anywhere
 - Tooltip can be shown at different positions
 - Tooltip can have custom text
 
-### Video Demo
+### Video Demo:
 
 [Tooltip Project Demo](https://youtu.be/-Dym4ghB854)
 
-### Run Project
+### Run Project:
 
 `npm start`
 
-### Build Project
+### Build Project:
 
 `npm run build`
